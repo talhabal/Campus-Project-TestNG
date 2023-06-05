@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Student Login">
+        <parameter name="usernm" value="S5_11G"></parameter>
+        <parameter name="pssword" value="12345"></parameter>
+        <classes>
+            <class name="LoginFeature.LoginOperation"></class>
+        </classes>
+    </test>
+</suite>
