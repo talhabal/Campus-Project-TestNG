@@ -18,8 +18,8 @@ public class Tools {
     }
 
     public static void successMessageAssert(){
-//        WebElement msgLabel= BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
-//        Assert.assertTrue(msgLabel.getText().toLowerCase().contains("success"));
+        WebElement successLabel = BaseDriver.driver.findElement(By.xpath("//*[contains(text(),'success')]"));
+        Assert.assertTrue(successLabel.getText().toLowerCase().contains("success"));
     }
 
     public static int RandomGenerator(int max){ //4
